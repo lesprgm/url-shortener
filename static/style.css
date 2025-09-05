@@ -3,7 +3,19 @@ body {
     background: #121212; /* dark background */
     color: #f1f1f1;      /* light text */
     text-align: center;
-    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* remove default body margin so footer can touch bottom */
+    padding: 50px 0 0; /* no bottom padding so footer is flush */
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+    padding: 20px 0;
 }
 
 .container {
@@ -11,7 +23,7 @@ body {
     padding: 20px 30px;
     border-radius: 10px;
     width: 400px;
-    margin: auto;
+    margin: 0 auto; /* horizontal centering fallback */
     box-shadow: 0px 4px 15px rgba(255,255,255,0.1);
 }
 
@@ -56,9 +68,9 @@ button:hover {
 
 /* Footer */
 footer {
-    margin-top: 40px;
     padding: 15px;
     background: #1a1a1a;
     color: #bbb;
     font-size: 14px;
+    flex-shrink: 0;
 }

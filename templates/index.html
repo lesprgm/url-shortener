@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
+  <main>
+  <div class="container">
         <h1>Python URL Shortener</h1>
 
         <form method="POST">
@@ -25,10 +26,11 @@
             </div>
           {% endif %}
         {% endwith %}
-    </div>
+  </div>
+  </main>
 
     <footer>
-        <p>Developed by Godfred & Leslie, 2025</p>
+        <p>Developed by Godfred & Leslie | 2025</p>
     </footer>
 </body>
 </html>
