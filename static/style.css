@@ -1,21 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: #121212; /* dark background */
+    color: #f1f1f1;      /* light text */
     text-align: center;
     padding: 50px;
 }
 
 .container {
-    background: white;
+    background: #1e1e1e; /* darker gray container */
     padding: 20px 30px;
     border-radius: 10px;
     width: 400px;
     margin: auto;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 15px rgba(255,255,255,0.1);
 }
 
 h1 {
-    color: #333;
+    color: #f9f9f9;
 }
 
 form {
@@ -26,6 +27,9 @@ input[type="text"] {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #555;
+    background: #2b2b2b;
+    color: #fff;
 }
 
 button {
@@ -44,7 +48,17 @@ button:hover {
 .messages {
     margin-top: 15px;
     padding: 10px;
-    background: #eaf4ff;
+    background: #2b2b2b;
     border: 1px solid #007BFF;
     border-radius: 5px;
+    color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: #1a1a1a;
+    color: #bbb;
+    font-size: 14px;
 }
